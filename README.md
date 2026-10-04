@@ -1,6 +1,6 @@
 # Are You Sure?
 
-[![Build](https://github.com/laforetbrut/are-you-sure/actions/workflows/build.yml/badge.svg)](https://github.com/laforetbrut/are-you-sure/actions/workflows/build.yml)
+[![Build](https://github.com/laforetbrut/mods-mc-areyousure/actions/workflows/build.yml/badge.svg)](https://github.com/laforetbrut/mods-mc-areyousure/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1%20%7C%2026.1.2-green)
 ![Loaders](https://img.shields.io/badge/Loaders-NeoForge%20%7C%20Forge-orange)
@@ -38,7 +38,7 @@ Break a block? Are you sure? Open a chest? Captcha. Hit a zombie while it is eat
 1. Install [NeoForge](https://neoforged.net/) or [Forge](https://files.minecraftforge.net/)
    for your Minecraft version.
 2. Download the jar matching your version and loader from the
-   [Releases](https://github.com/laforetbrut/are-you-sure/releases) page.
+   [Releases](https://github.com/laforetbrut/mods-mc-areyousure/releases) page.
 3. Drop it into your `mods` folder.
 4. Launch the game and regret it.
 
@@ -109,7 +109,7 @@ Casser un bloc ? Vous êtes sûr ? Ouvrir un coffre ? Captcha. Frapper un zombie
 1. Installez [NeoForge](https://neoforged.net/) ou [Forge](https://files.minecraftforge.net/)
    pour votre version de Minecraft.
 2. Téléchargez le jar correspondant à votre version et votre loader depuis la page
-   [Releases](https://github.com/laforetbrut/are-you-sure/releases).
+   [Releases](https://github.com/laforetbrut/mods-mc-areyousure/releases).
 3. Placez-le dans le dossier `mods`.
 4. Lancez le jeu et regrettez.
 

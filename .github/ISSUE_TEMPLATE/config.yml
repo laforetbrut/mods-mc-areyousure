@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Questions and discussions
-    url: https://github.com/laforetbrut/are-you-sure/discussions
+    url: https://github.com/laforetbrut/mods-mc-areyousure/discussions
     about: Ask questions and share ideas here.
   - name: Security issue
-    url: https://github.com/laforetbrut/are-you-sure/security/advisories/new
+    url: https://github.com/laforetbrut/mods-mc-areyousure/security/advisories/new
     about: Report vulnerabilities privately.
