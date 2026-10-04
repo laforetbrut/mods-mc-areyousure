@@ -1,0 +1,176 @@
+# The CurseForge page of Are You Sure?, in one file.
+#
+#   python images/tools/export_icons.py images/tools/page.toml
+#   python images/tools/titles.py images/tools/page.toml
+#   python images/tools/build_page.py images/tools/page.toml
+#
+# Author: vyrriox
+
+[page]
+languages = ["en", "fr"]
+images_base = "https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/"
+images_dir = ".."
+out = "../../curseforge_page.md"
+root = "../.."
+theme = "theme.json"
+author = "vyrriox"
+license = "Apache 2.0"
+
+[mod]
+name = "Are You Sure?"
+
+[hero]
+file = "hero.gif"
+alt.en = "Are You Sure?: a pig and an oak tree in a sunny meadow"
+alt.fr = "Are You Sure? : un cochon et un chêne dans une prairie ensoleillée"
+
+[links]
+discord = "https://discord.gg/xjF8Rtzyd4"
+website = { url = "https://arcadia-echoes-of-power.fr/", label = "Website", message = "Arcadia", icon = "globe" }
+source = "https://github.com/laforetbrut/mods-mc-areyousure"
+donate = "https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00"
+partners = "https://www.arcadia-echoes-of-power.fr/partenariat"
+
+[badges]
+minecraft = ["1.21.1", "26.1.2"]
+loaders = ["NeoForge", "Forge"]
+side = "Client, server optional"
+
+[intro]
+pitch.en = "<strong>Are You Sure?</strong> is a troll mod: before you break, hit, place or open anything, the game asks if you are really sure, then makes you solve a captcha."
+pitch.fr = "<strong>Are You Sure?</strong> est un mod troll : avant de casser, frapper, poser ou ouvrir quoi que ce soit, le jeu vous demande si vous êtes vraiment sûr, puis vous fait remplir un captcha."
+tagline.en = "Hit a pig? Are you sure? Prove you are not a robot."
+tagline.fr = "Frapper un cochon ? Vous êtes sûr ? Prouvez que vous n'êtes pas un robot."
+
+[icons]
+# built-in set only: the mod has no texture of its own
+
+# ------------------------------------------------------------------ sections
+
+[[section]]
+id = "features"
+title.en = "What It Does"
+title.fr = "Ce Qu'il Fait"
+icon = "question"
+
+  [[section.banner]]
+  file = "flow.gif"
+  alt.en = "The Are You Sure? screen: a confirmation, then a colored captcha code, a wrong answer that shakes the box, and the right one"
+  alt.fr = "L'écran Are You Sure? : une confirmation, puis un code captcha coloré, une mauvaise réponse qui fait trembler la boîte, et la bonne"
+
+  [[section.item]]
+  icon = "warning"
+  name.en = "Every interaction"
+  name.fr = "Toutes les actions"
+  text.en = "breaking, attacking, placing, using items, opening chests, talking to villagers."
+  text.fr = "casser, attaquer, poser, utiliser un objet, ouvrir un coffre, parler aux villageois."
+
+  [[section.item]]
+  icon = "lock"
+  name.en = "A real captcha"
+  name.fr = "Un vrai captcha"
+  text.en = "a scrambled colored code to type back. Wrong answer, new code."
+  text.fr = "un code coloré et brouillé à recopier. Mauvaise réponse, nouveau code."
+
+  [[section.item]]
+  icon = "eye"
+  name.en = "Knows what you do"
+  name.fr = "Sait ce que vous faites"
+  text.en = '"Do you really want to attack Pig?", with the icon of the target.'
+  text.fr = "« Voulez-vous vraiment attaquer : Cochon ? », avec l'icône de la cible."
+
+  [[section.item]]
+  icon = "clock"
+  name.en = "No pause"
+  name.fr = "Pas de pause"
+  text.en = "the game keeps running while you type. Good luck in the Nether."
+  text.fr = "le jeu continue pendant la saisie. Bon courage dans le Nether."
+
+[[section]]
+id = "chain"
+title.en = "One Captcha Per Action"
+title.fr = "Un Captcha Par Action"
+icon = "refresh"
+
+  [[section.banner]]
+  file = "chain.gif"
+  alt.en = "After one captcha the player hits the pig four times freely, then turns to an oak tree and is asked again"
+  alt.fr = "Après un captcha, le joueur frappe le cochon quatre fois librement, puis se tourne vers un chêne et la question revient"
+
+  [[section.item]]
+  icon = "check"
+  name.en = "Chain it"
+  name.fr = "Enchaînez"
+  text.en = "solve once to attack pigs, then hit pigs as long as you like."
+  text.fr = "résolvez une fois pour attaquer des cochons, puis frappez autant que vous voulez."
+
+  [[section.item]]
+  icon = "refresh"
+  name.en = "Switch, and it asks"
+  name.fr = "Changez, ça redemande"
+  text.en = "chop a tree, place stone, eat bread: each new action needs its own captcha."
+  text.fr = "couper un arbre, poser de la pierre, manger : chaque nouvelle action a son captcha."
+
+[[section]]
+id = "admin"
+title.en = "For Server Admins"
+title.fr = "Pour les Admins"
+icon = "server"
+
+  [[section.item]]
+  icon = "shield"
+  name.en = "On or off"
+  name.fr = "Activer, couper"
+  text.en = "<code>/areyousure enable</code> or <code>disable</code>, for everyone at once."
+  text.fr = "<code>/areyousure enable</code> ou <code>disable</code>, pour tout le monde."
+
+  [[section.item]]
+  icon = "users"
+  name.en = "Pick your victims"
+  name.fr = "Choisissez vos victimes"
+  text.en = "<code>/areyousure only &lt;players&gt;</code> targets just them."
+  text.fr = "<code>/areyousure only &lt;joueurs&gt;</code> ne vise qu'eux."
+
+  [[section.item]]
+  icon = "gear"
+  name.en = "Tune it"
+  name.fr = "Réglez-le"
+  text.en = "code length from 3 to 10, pass timeout, a captcha on demand with <code>challenge</code>."
+  text.fr = "code de 3 à 10 caractères, durée du passe, captcha à la demande avec <code>challenge</code>."
+
+# ------------------------------------------------------------------ after the sections
+
+[support]
+url = "https://github.com/laforetbrut/mods-mc-areyousure/issues"
+text.en = 'A bug or an idea? Ask on <a href="https://discord.gg/xjF8Rtzyd4">Discord</a> or'
+text.fr = 'Un bug ou une idée ? Demandez sur <a href="https://discord.gg/xjF8Rtzyd4">Discord</a> ou'
+link.en = "open an issue"
+link.fr = "ouvrez un ticket"
+
+[[partner]]
+shared = true
+title.en = "Official Hosting Partner"
+title.fr = "Hébergeur Officiel Partenaire"
+text.en = "Want to prank your whole server? Our partner offers Minecraft hosting optimized for modpacks."
+text.fr = "Envie de piéger tout votre serveur ? Notre partenaire propose un hébergement Minecraft optimisé pour les modpacks."
+image = "https://arcadia-echoes-of-power.fr/storage/curseforge/bannerwab.png"
+alt.en = "WabbaNode, official hosting partner"
+alt.fr = "WabbaNode, hébergeur officiel partenaire"
+url = "https://wabbanode.com/partner/vyrriox"
+badge = { label = "Host with", message = "WabbaNode" }
+
+[[extra]]
+shared = true
+title.en = "Join the Adventure"
+title.fr = "Rejoignez l'Aventure"
+text.en = "Discover our other mods on the Arcadia modpack: industry, magic and exploration."
+text.fr = "Découvrez nos autres mods sur le modpack Arcadia : industrie, magie et exploration."
+url = "https://arcadia-echoes-of-power.fr/"
+badge = { label = { en = "Play now", fr = "Jouer" }, message = "Arcadia", icon = "play" }
+
+[footer]
+title.en = "Support the Project"
+title.fr = "Soutenir le Projet"
+text.en = "Your support keeps Arcadia alive and evolving."
+text.fr = "Votre soutien fait vivre et évoluer Arcadia."
+badges = ["donate", "partners"]

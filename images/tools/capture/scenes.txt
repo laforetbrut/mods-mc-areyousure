@@ -1,0 +1,122 @@
+# Are You Sure? page footage, NeoForge 1.21.1.
+# Run from neoforge-1.21.1/:  ./gradlew runCapture -PcaptureScript=../images/tools/capture/scenes.txt
+
+world aysure_flat 20261004 flat
+wait 100
+size 1600 900
+freeze
+hud off
+notoast on
+rd 8
+time 1500
+cmd gamerule doMobSpawning false
+cmd gamerule announceAdvancements false
+cmd gamerule showDeathMessages false
+lang en_us
+wait 260
+
+# --- the stage: a pig, an oak, a few flowers
+tp 0.5 -60 0.5 0 0
+wait 120
+cmd kill @e[type=!minecraft:player]
+cmd fill -6 -60 -2 6 -56 10 air
+cmd fill -2 -60 3 -2 -56 3 minecraft:oak_log
+cmd fill -4 -56 1 0 -55 5 minecraft:oak_leaves[persistent=true] keep
+cmd fill -3 -54 2 -1 -54 4 minecraft:oak_leaves[persistent=true] keep
+cmd setblock 2 -60 4 minecraft:poppy
+cmd setblock 3 -60 6 minecraft:dandelion
+cmd setblock -1 -60 7 minecraft:cornflower
+cmd summon minecraft:pig 1.0 -60 3.0 {NoAI:1b,Rotation:[180f,0f]}
+wait 40
+
+# --- hero plate: the pig and the oak, room for the title on the left
+target entity minecraft:pig
+fov 40
+cam 6.5 1.7 20 0.6 -12
+wait 120
+shot hero_plate
+
+# --- first person, at arm's length from the pig, in survival
+tp 0.8 -60 0.2 0 20
+wait 60
+fly off
+cmd gamemode survival
+cmd effect give @s minecraft:instant_health 1 5 true
+pin on
+grab on
+wait 40
+look 1.0 -59.5 2.7
+wait 30
+until entity 60
+status
+shot world_before
+
+# --- the whole story: ask, confirm, fail, solve, chain hits, then the oak asks again
+guiscale 2
+mouse 3 3
+record flow 520
+mark attack
+key key.attack
+until screen 40
+wait 45
+mark yes
+click 672 574
+wait 45
+mark wrong
+type QX7K2M
+press ENTER
+wait 45
+mark solve
+solve
+wait 25
+press ENTER
+mark done
+until noscreen 20
+wait 15
+mark hit1
+key key.attack
+wait 14
+mark hit2
+key key.attack
+wait 14
+mark hit3
+key key.attack
+wait 14
+mark hit4
+key key.attack
+wait 20
+mark turn
+pin off
+look -1.5 -58.5 3.0
+pin on
+wait 25
+mark oak
+key key.attack
+until screen 40
+wait 60
+screen close
+wait 10
+
+# --- stills for the gallery
+pin off
+look 1.0 -59.5 2.7
+wait 30
+cmd effect give @s minecraft:instant_health 1 5 true
+look 1.5 -60 1.5
+pin on
+wait 30
+key key.attack
+until screen 40
+wait 20
+shot screen_step1
+click 672 574
+wait 20
+type K7P
+wait 20
+shot screen_step2
+press ENTER
+wait 30
+shot screen_wrong
+screen close
+
+quit

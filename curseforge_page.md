@@ -1,225 +1,91 @@
-<div align="center">
-
-<h1 style="font-size: 3em; margin-top: 20px; margin-bottom: 20px;">Are You Sure?</h1>
-
-<p align="center">
-  <a href="https://discord.gg/xjF8Rtzyd4">
-    <img src="https://img.shields.io/discord/1457392657830772738?style=for-the-badge&color=5865F2&label=Discord&logo=discord&logoColor=white" alt="Discord">
-  </a>
-  &nbsp;
-  <a href="https://arcadia-echoes-of-power.fr/">
-    <img src="https://img.shields.io/badge/Website-Arcadia-blue?style=for-the-badge&logo=google-chrome" alt="Website">
-  </a>
-  &nbsp;
-  <a href="https://github.com/laforetbrut/mods-mc-areyousure">
-    <img src="https://img.shields.io/badge/Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
-  &nbsp;
-  <a href="https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00">
-    <img src="https://img.shields.io/badge/Donate-Stripe-6772E5?style=for-the-badge&logo=stripe&logoColor=white" alt="Donate">
-  </a>
-  &nbsp;
-  <a href="https://www.arcadia-echoes-of-power.fr/partenariat">
-    <img src="https://img.shields.io/badge/Partners-Partenaires-orange?style=for-the-badge&logoColor=white" alt="Partners">
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Minecraft-1.21.1_|_26.1.2-62B47A?style=for-the-badge" alt="Minecraft">
-  &nbsp;
-  <img src="https://img.shields.io/badge/Loaders-NeoForge_|_Forge-E04E14?style=for-the-badge" alt="Loaders">
-  &nbsp;
-  <img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge" alt="Apache 2.0">
-</p>
-
+<div align="center" style="text-align:center">
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/hero.gif" alt="Are You Sure?: a pig and an oak tree in a sunny meadow / Are You Sure? : un cochon et un chêne dans une prairie ensoleillée" width="800"></p>
+<p><a href="https://discord.gg/xjF8Rtzyd4"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-discord.png" alt="Discord: Join"></a> <a href="https://arcadia-echoes-of-power.fr/"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-website.png" alt="Website: Arcadia"></a> <a href="https://github.com/laforetbrut/mods-mc-areyousure"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-source.png" alt="Source: GitHub"></a> <a href="https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-donate.png" alt="Donate: Stripe"></a> <a href="https://www.arcadia-echoes-of-power.fr/partenariat"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-partners.png" alt="Partners: See"></a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-minecraft.png" alt="Minecraft: 1.21.1 | 26.1.2"> <img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-loaders.png" alt="Loaders: NeoForge | Forge"> <img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-side.png" alt="Side: Client, server optional"></p>
 </div>
 
-<br><br>
-
-<p align="center" style="font-size: 1.5em; font-weight: bold;">English (US)</p>
-<div align="center">
-  <hr style="width: 50%;">
+<div align="center" style="text-align:center">
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/lang-en.gif" alt="English" width="800"></p>
+<p><span style="font-size:18px;color:#e5e5e5"><strong>Are You Sure?</strong> is a troll mod: before you break, hit, place or open anything, the game asks if you are really sure, then makes you solve a captcha.</span></p>
+<p><span style="font-size:20px;color:#e0453a"><em>Hit a pig? Are you sure? Prove you are not a robot.</em></span></p>
 </div>
 
-<br>
-
-<p align="center"><strong>Are You Sure?</strong> is a client-side troll mod for NeoForge and Forge.<br>Every time you try to do anything, the game asks if you are <strong>really</strong> sure, then makes you solve a captcha to prove you are not a robot.</p>
-
-<p align="center"><em>Break a block? Are you sure? Open a chest? Captcha. Hit the zombie that is eating you? Captcha.</em></p>
-
-<h3 align="center">Key Features</h3>
-
-<p align="center">
-<strong>Confirmation Screen</strong> — Breaking, attacking, placing, using items, opening chests, talking to villagers, pick-block: everything asks first.<br>
-<strong>Real Captcha</strong> — A random 6 character code with colored, scattered letters and visual noise.<br>
-<strong>No Mercy</strong> — A wrong answer generates a brand new code.<br>
-<strong>One Captcha per Action Type</strong> — Solve it once to kill pigs, then chain pigs freely. Switch to chopping a tree and it asks again.<br>
-<strong>Context Aware</strong> — "Do you really want to break Oak Log?" The screen always tells you what you are about to do.<br>
-⏱️ <strong>No Pause</strong> — The game keeps running while you type. Good luck in the Nether.<br>
-<strong>Translated</strong> — English and French.<br>
-<strong>Admin Command</strong> — <code>/areyousure</code> turns it on or off for everyone or chosen players, tunes the captcha and sends one on demand.<br>
-<strong>Server Optional</strong> — Works alone on any server, install it server-side for the admin command.
-</p>
-
-<br>
-
-<h3 align="center">How It Works</h3>
-
-<p align="center">
-<strong>1.</strong> You click on something.<br>
-<strong>2.</strong> "ARE YOU SURE?" → <strong>Yes, I am sure</strong> / <strong>No, never mind</strong>.<br>
-<strong>3.</strong> "Prove you are not a robot" → type the code, press <strong>Enter</strong> or <strong>Verify</strong>.<br>
-<strong>4.</strong> Repeat the same action as much as you want. Do anything else and it starts over.<br>
-<strong>5.</strong> Repeat forever.
-</p>
-
-<br>
-
-<h3 align="center">Supported Versions</h3>
-
-<p align="center">
-<strong>NeoForge 1.21.1</strong> — Java 21<br>
-<strong>Forge 1.21.1</strong> — Java 21<br>
-<strong>NeoForge 26.1.2</strong> — Java 25<br>
-<strong>Forge 26.1.2</strong> — Java 25
-</p>
-
-<br>
-
-<h3 align="center">Recommended Use</h3>
-
-<p align="center">
-Pranking a friend, a chaotic YouTube challenge, a "can you beat the game" run, or teaching patience.<br>
-<strong>Not</strong> recommended for a relaxing survival world.
-</p>
-
-<br>
-
-<hr style="width: 50%;">
-
-<h3 align="center">Official Hosting Partner</h3>
-
-<p align="center">Want to prank your whole server? Our official US / international partner offers high-performance Minecraft hosting optimized for modpacks.</p>
-
-<p align="center"><a href="https://wabbanode.com/partner/vyrriox" target="_blank" rel="nofollow noopener"><img style="border: 2px solid #62B47A;" src="https://arcadia-echoes-of-power.fr/storage/curseforge/bannerwab.png" alt="WabbaNode - Official Hosting Partner" width="800"></a></p>
-
-<p align="center"><a href="https://wabbanode.com/partner/vyrriox" target="_blank" rel="nofollow noopener"><img src="https://img.shields.io/badge/Host_with-WabbaNode-62B47A?style=for-the-badge&logo=server&logoColor=white" alt="Host with WabbaNode"></a></p>
-
-<br>
-
-<div align="center">
-    <h3 align="center">Join the Adventure</h3>
-    <p align="center">Discover our other mods on our unique <strong>Industry, Magic & Exploration</strong> modpack.</p>
-    <a href="https://arcadia-echoes-of-power.fr/">
-        <img src="https://img.shields.io/badge/Play_Now-Arcadia_Modpack-2ea44f?style=for-the-badge&logo=curseforge" alt="Play Now">
-    </a>
+<div align="center" style="text-align:center">
+<h3><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/title-features-en.gif" alt="What It Does" width="800"></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/flow.gif" alt="The Are You Sure? screen: a confirmation, then a colored captcha code, a wrong answer that shakes the box, and the right one" width="800"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/warning.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Every interaction:</strong></span> breaking, attacking, placing, using items, opening chests, talking to villagers.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/lock.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>A real captcha:</strong></span> a scrambled colored code to type back. Wrong answer, new code.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/eye.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Knows what you do:</strong></span> "Do you really want to attack Pig?", with the icon of the target.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/clock.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>No pause:</strong></span> the game keeps running while you type. Good luck in the Nether.</p>
 </div>
 
-<br><br>
-
-<p align="center" style="font-size: 1.5em; font-weight: bold;">Français (FR)</p>
-<div align="center">
-  <hr style="width: 50%;">
+<div align="center" style="text-align:center">
+<h3><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/title-chain-en.gif" alt="One Captcha Per Action" width="800"></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/chain.gif" alt="After one captcha the player hits the pig four times freely, then turns to an oak tree and is asked again" width="800"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/check.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Chain it:</strong></span> solve once to attack pigs, then hit pigs as long as you like.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/refresh.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Switch, and it asks:</strong></span> chop a tree, place stone, eat bread: each new action needs its own captcha.</p>
 </div>
 
-<br>
-
-<p align="center"><strong>Are You Sure?</strong> est un mod troll côté client pour NeoForge et Forge.<br>À chaque fois que vous essayez de faire quoi que ce soit, le jeu vous demande si vous êtes <strong>vraiment</strong> sûr, puis vous fait remplir un captcha pour prouver que vous n'êtes pas un robot.</p>
-
-<p align="center"><em>Casser un bloc ? Vous êtes sûr ? Ouvrir un coffre ? Captcha. Frapper le zombie qui vous dévore ? Captcha.</em></p>
-
-<h3 align="center">Fonctionnalités Clés</h3>
-
-<p align="center">
-<strong>Écran de Confirmation</strong> — Casser, attaquer, poser, utiliser un objet, ouvrir un coffre, parler aux villageois, pick-block : tout demande d'abord.<br>
-<strong>Vrai Captcha</strong> — Un code aléatoire de 6 caractères avec lettres colorées, décalées et bruit visuel.<br>
-<strong>Aucune Pitié</strong> — Une mauvaise réponse génère un tout nouveau code.<br>
-<strong>Un Captcha par Type d'Action</strong> — Résolvez-le une fois pour tuer des cochons, puis enchaînez. Passez à couper un arbre et ça recommence.<br>
-<strong>Contextuel</strong> — « Voulez-vous vraiment casser : Bûche de chêne ? » L'écran vous dit toujours ce que vous allez faire.<br>
-⏱️ <strong>Pas de Pause</strong> — Le jeu continue pendant la saisie. Bon courage dans le Nether.<br>
-<strong>Traduit</strong> — Anglais et français.<br>
-<strong>Commande Admin</strong> — <code>/areyousure</code> active ou désactive le mod pour tous ou certains joueurs, règle le captcha et en envoie un à la demande.<br>
-<strong>Serveur Optionnel</strong> — Fonctionne seul sur n'importe quel serveur, installez-le côté serveur pour la commande admin.
-</p>
-
-<br>
-
-<h3 align="center">Comment ça Marche</h3>
-
-<p align="center">
-<strong>1.</strong> Vous cliquez sur quelque chose.<br>
-<strong>2.</strong> « ÊTES-VOUS SÛR ? » → <strong>Oui, j'en suis sûr</strong> / <strong>Non, laisse tomber</strong>.<br>
-<strong>3.</strong> « Prouvez que vous n'êtes pas un robot » → tapez le code, puis <strong>Entrée</strong> ou <strong>Valider</strong>.<br>
-<strong>4.</strong> Répétez la même action autant que vous voulez. Faites autre chose et tout recommence.<br>
-<strong>5.</strong> Recommencez pour toujours.
-</p>
-
-<br>
-
-<h3 align="center">Versions Supportées</h3>
-
-<p align="center">
-<strong>NeoForge 1.21.1</strong> — Java 21<br>
-<strong>Forge 1.21.1</strong> — Java 21<br>
-<strong>NeoForge 26.1.2</strong> — Java 25<br>
-<strong>Forge 26.1.2</strong> — Java 25
-</p>
-
-<br>
-
-<h3 align="center">Usage Recommandé</h3>
-
-<p align="center">
-Piéger un ami, un défi YouTube chaotique, un run « finir le jeu avec », ou apprendre la patience.<br>
-<strong>Déconseillé</strong> pour une partie survie relaxante.
-</p>
-
-<br>
-
-<hr style="width: 50%;">
-
-<h3 align="center">Hébergeur Officiel Partenaire</h3>
-
-<p align="center">Envie de piéger tout votre serveur ? Notre partenaire officiel français propose un hébergement Minecraft haute performance optimisé pour les modpacks.</p>
-
-<p align="center"><a href="https://lordhosting.fr/gaming/serveur-minecraft?ref=arcadia" target="_blank" rel="nofollow noopener"><img style="border: 2px solid #62B47A;" src="https://arcadia-echoes-of-power.fr/storage/curseforge/bannerlord.png" alt="LordHosting - Hébergeur Officiel Partenaire" width="800"></a></p>
-
-<p align="center"><a href="https://lordhosting.fr/gaming/serveur-minecraft?ref=arcadia" target="_blank" rel="nofollow noopener"><img src="https://img.shields.io/badge/Heberger_avec-LordHosting-62B47A?style=for-the-badge&logo=server&logoColor=white" alt="Héberger avec LordHosting"></a></p>
-
-<br>
-
-<div align="center">
-    <h3>Rejoignez l'Aventure</h3>
-    <p>Découvrez nos autres mods sur notre modpack unique <strong>Industrie, Magie & Exploration</strong>.</p>
-    <a href="https://arcadia-echoes-of-power.fr/">
-        <img src="https://img.shields.io/badge/Jouer_Maintenant-Modpack_Arcadia-2ea44f?style=for-the-badge&logo=curseforge" alt="Jouer Maintenant">
-    </a>
+<div align="center" style="text-align:center">
+<h3><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/title-admin-en.gif" alt="For Server Admins" width="800"></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/shield.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>On or off:</strong></span> <code>/areyousure&nbsp;enable</code> or <code>disable</code>, for everyone at once.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/users.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Pick your victims:</strong></span> <code>/areyousure&nbsp;only&nbsp;&lt;players&gt;</code> targets just them.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/gear.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Tune it:</strong></span> code length from 3 to 10, pass timeout, a captcha on demand with <code>challenge</code>.</p>
 </div>
 
-<br><br>
-<hr>
-
-<div align="center">
-
-<p align="center" style="font-size: 1.5em; font-weight: bold;">Support the Project / Soutenir le Projet</p>
-
-<p align="center">
-  <strong>Your support helps us keep Arcadia alive and evolving!</strong><br>
-  <em>Votre soutien nous aide à faire vivre et évoluer Arcadia !</em>
-</p>
-
-<div align="center">
-<a href="https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00">
-  <img src="https://img.shields.io/badge/Donate_via_Stripe-Support_Us-6772E5?style=for-the-badge&logo=stripe&logoColor=white" alt="Support Us" height="40">
-</a>
-
-<br><br>
-
-<a href="https://www.arcadia-echoes-of-power.fr/partenariat">
-  <img src="https://img.shields.io/badge/Partners-Partenaires-orange?style=for-the-badge&logoColor=white" alt="Partners" height="30">
-</a>
+<div align="center" style="text-align:center">
+<p>A bug or an idea? Ask on <a href="https://discord.gg/xjF8Rtzyd4" style="color:#e0453a">Discord</a> or <a href="https://github.com/laforetbrut/mods-mc-areyousure/issues" style="color:#e0453a">open an issue</a>.</p>
 </div>
 
-<p align="center"><strong>Author:</strong> vyrriox &nbsp;|&nbsp; <strong>License:</strong> Apache 2.0</p>
+<p>&nbsp;</p>
 
+<div align="center" style="text-align:center">
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/lang-fr.gif" alt="Français" width="800"></p>
+<p><span style="font-size:18px;color:#e5e5e5"><strong>Are You Sure?</strong> est un mod troll&nbsp;: avant de casser, frapper, poser ou ouvrir quoi que ce soit, le jeu vous demande si vous êtes vraiment sûr, puis vous fait remplir un captcha.</span></p>
+<p><span style="font-size:20px;color:#e0453a"><em>Frapper un cochon&nbsp;? Vous êtes sûr&nbsp;? Prouvez que vous n'êtes pas un robot.</em></span></p>
+</div>
+
+<div align="center" style="text-align:center">
+<h3><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/title-features-fr.gif" alt="Ce Qu&#x27;il Fait" width="800"></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/warning.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Toutes les actions&nbsp;:</strong></span> casser, attaquer, poser, utiliser un objet, ouvrir un coffre, parler aux villageois.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/lock.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Un vrai captcha&nbsp;:</strong></span> un code coloré et brouillé à recopier. Mauvaise réponse, nouveau code.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/eye.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Sait ce que vous faites&nbsp;:</strong></span> «&nbsp;Voulez-vous vraiment attaquer&nbsp;: Cochon&nbsp;?&nbsp;», avec l'icône de la cible.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/clock.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Pas de pause&nbsp;:</strong></span> le jeu continue pendant la saisie. Bon courage dans le Nether.</p>
+</div>
+
+<div align="center" style="text-align:center">
+<h3><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/title-chain-fr.gif" alt="Un Captcha Par Action" width="800"></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/check.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Enchaînez&nbsp;:</strong></span> résolvez une fois pour attaquer des cochons, puis frappez autant que vous voulez.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/refresh.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Changez, ça redemande&nbsp;:</strong></span> couper un arbre, poser de la pierre, manger&nbsp;: chaque nouvelle action a son captcha.</p>
+</div>
+
+<div align="center" style="text-align:center">
+<h3><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/title-admin-fr.gif" alt="Pour les Admins" width="800"></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/shield.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Activer, couper&nbsp;:</strong></span> <code>/areyousure&nbsp;enable</code> ou <code>disable</code>, pour tout le monde.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/users.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Choisissez vos victimes&nbsp;:</strong></span> <code>/areyousure&nbsp;only&nbsp;&lt;joueurs&gt;</code> ne vise qu'eux.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/gear.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Réglez-le&nbsp;:</strong></span> code de 3 à 10 caractères, durée du passe, captcha à la demande avec <code>challenge</code>.</p>
+</div>
+
+<div align="center" style="text-align:center">
+<p>Un bug ou une idée&nbsp;? Demandez sur <a href="https://discord.gg/xjF8Rtzyd4" style="color:#e0453a">Discord</a> ou <a href="https://github.com/laforetbrut/mods-mc-areyousure/issues" style="color:#e0453a">ouvrez un ticket</a>.</p>
+</div>
+
+<div align="center" style="text-align:center">
+<h3><span style="font-size:24px;color:#e5e5e5"><strong>Official Hosting Partner / Hébergeur Officiel Partenaire</strong></span></h3>
+<p>Want to prank your whole server? Our partner offers Minecraft hosting optimized for modpacks.<br><em>Envie de piéger tout votre serveur&nbsp;? Notre partenaire propose un hébergement Minecraft optimisé pour les modpacks.</em></p>
+<p><a href="https://wabbanode.com/partner/vyrriox"><img src="https://arcadia-echoes-of-power.fr/storage/curseforge/bannerwab.png" alt="WabbaNode, official hosting partner" width="800"></a></p>
+<p><a href="https://wabbanode.com/partner/vyrriox"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-partner-1.png" alt="Host with: WabbaNode"></a></p>
+<p>&nbsp;</p>
+<h3><span style="font-size:24px;color:#e5e5e5"><strong>Join the Adventure / Rejoignez l'Aventure</strong></span></h3>
+<p>Discover our other mods on the Arcadia modpack: industry, magic and exploration.<br><em>Découvrez nos autres mods sur le modpack Arcadia&nbsp;: industrie, magie et exploration.</em></p>
+<p><a href="https://arcadia-echoes-of-power.fr/"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-extra-1-en.png" alt="Play now: Arcadia"></a></p>
+</div>
+
+<div align="center" style="text-align:center">
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/divider.gif" alt="" width="800"></p>
+<p><span style="font-size:24px;color:#e5e5e5"><strong>Support the Project / Soutenir le Projet</strong></span></p>
+<p><strong>Your support keeps Arcadia alive and evolving.</strong><br><em>Votre soutien fait vivre et évoluer Arcadia.</em></p>
+<p><a href="https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-donate.png" alt="Donate: Stripe"></a></p>
+<p><a href="https://www.arcadia-echoes-of-power.fr/partenariat"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-partners.png" alt="Partners: See"></a></p>
+<p><strong>Author / Auteur:</strong> vyrriox &nbsp;|&nbsp; <strong>License / Licence:</strong> Apache 2.0</p>
 </div>
