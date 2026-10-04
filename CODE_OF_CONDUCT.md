@@ -22,7 +22,7 @@ or sexual orientation.
 
 Maintainers may remove, edit or reject contributions that do not follow this code, and may ban
 contributors temporarily or permanently. Report problems through
-[GitHub Discussions](https://github.com/laforetbrut/are-you-sure/discussions) or by mentioning
+[GitHub Discussions](https://github.com/laforetbrut/mods-mc-areyousure/discussions) or by mentioning
 @laforetbrut.
 
 This code is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 2.1.
@@ -35,4 +35,4 @@ Ce projet se veut accueillant pour tout le monde. Soyez respectueux, acceptez le
 constructives, et évitez tout harcèlement, insulte ou divulgation d'informations privées.
 Les mainteneurs peuvent retirer toute contribution ou bannir tout contributeur qui ne respecte pas
 ce code. Signalez les problèmes via les
-[Discussions GitHub](https://github.com/laforetbrut/are-you-sure/discussions) ou en mentionnant @laforetbrut.
+[Discussions GitHub](https://github.com/laforetbrut/mods-mc-areyousure/discussions) ou en mentionnant @laforetbrut.
