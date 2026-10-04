@@ -1,10 +1,10 @@
 modLoader="javafml"
 loaderVersion="[52,)"
-license="MIT"
+license="Apache-2.0"
 
 [[mods]]
 modId="areyousure"
-version="1.0.0"
+version="1.0.1"
 displayName="Are You Sure?"
 displayTest="IGNORE_ALL_VERSION"
 authors="vyrriox"

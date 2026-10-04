@@ -9,7 +9,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '[7.0.3,8)'
 }
 
-version = '1.0.0'
+version = '1.0.1'
 group = 'com.vyrriox.areyousure'
 
 // Mojang ships Java 21 to end users in 1.20.5+, so your mod should target Java 21.
@@ -60,3 +60,8 @@ tasks.withType(JavaCompile).configureEach {
     // This is done by default in Java 18+, but this ensures it no matter the Java or Gradle version
     options.encoding = 'UTF-8'
 }
+
+// Shared code lives in ../common/<mc> on main, and in ./common on the per-target branches.
+def commonDir = file('../common/1.21.1').exists() ? file('../common/1.21.1') : file('common')
+sourceSets.main.java.srcDir(new File(commonDir, 'java'))
+sourceSets.main.resources.srcDir(new File(commonDir, 'resources'))

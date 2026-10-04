@@ -182,3 +182,8 @@ idea {
         downloadJavadoc = true
     }
 }
+
+// Shared code lives in ../common/<mc> on main, and in ./common on the per-target branches.
+def commonDir = file('../common/26.1.2').exists() ? file('../common/26.1.2') : file('common')
+sourceSets.main.java.srcDir(new File(commonDir, 'java'))
+sourceSets.main.resources.srcDir(new File(commonDir, 'resources'))

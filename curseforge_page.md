@@ -29,7 +29,7 @@
   &nbsp;
   <img src="https://img.shields.io/badge/Loaders-NeoForge_|_Forge-E04E14?style=for-the-badge" alt="Loaders">
   &nbsp;
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT">
+  <img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge" alt="Apache 2.0">
 </p>
 
 </div>
@@ -53,11 +53,12 @@
 <strong>Confirmation Screen</strong> — Breaking, attacking, placing, using items, opening chests, talking to villagers, pick-block: everything asks first.<br>
 <strong>Real Captcha</strong> — A random 6 character code with colored, scattered letters and visual noise.<br>
 <strong>No Mercy</strong> — A wrong answer generates a brand new code.<br>
-<strong>One Captcha, One Action</strong> — The pass is consumed as soon as you release the key. Mining a whole block is still allowed, you earned it.<br>
+<strong>One Captcha per Action Type</strong> — Solve it once to kill pigs, then chain pigs freely. Switch to chopping a tree and it asks again.<br>
 <strong>Context Aware</strong> — "Do you really want to break Oak Log?" The screen always tells you what you are about to do.<br>
 ⏱️ <strong>No Pause</strong> — The game keeps running while you type. Good luck in the Nether.<br>
 <strong>Translated</strong> — English and French.<br>
-<strong>100% Client-Side</strong> — Works on any server, the server does not need the mod.
+<strong>Admin Command</strong> — <code>/areyousure</code> turns it on or off for everyone or chosen players, tunes the captcha and sends one on demand.<br>
+<strong>Server Optional</strong> — Works alone on any server, install it server-side for the admin command.
 </p>
 
 <br>
@@ -68,7 +69,7 @@
 <strong>1.</strong> You click on something.<br>
 <strong>2.</strong> "ARE YOU SURE?" → <strong>Yes, I am sure</strong> / <strong>No, never mind</strong>.<br>
 <strong>3.</strong> "Prove you are not a robot" → type the code, press <strong>Enter</strong> or <strong>Verify</strong>.<br>
-<strong>4.</strong> You may now perform <strong>one</strong> action. Click again within 10 seconds.<br>
+<strong>4.</strong> Repeat the same action as much as you want. Do anything else and it starts over.<br>
 <strong>5.</strong> Repeat forever.
 </p>
 
@@ -133,11 +134,12 @@ Pranking a friend, a chaotic YouTube challenge, a "can you beat the game" run, o
 <strong>Écran de Confirmation</strong> — Casser, attaquer, poser, utiliser un objet, ouvrir un coffre, parler aux villageois, pick-block : tout demande d'abord.<br>
 <strong>Vrai Captcha</strong> — Un code aléatoire de 6 caractères avec lettres colorées, décalées et bruit visuel.<br>
 <strong>Aucune Pitié</strong> — Une mauvaise réponse génère un tout nouveau code.<br>
-<strong>Un Captcha, Une Action</strong> — Le passe est consommé dès que vous relâchez la touche. Miner un bloc entier reste permis, vous l'avez mérité.<br>
+<strong>Un Captcha par Type d'Action</strong> — Résolvez-le une fois pour tuer des cochons, puis enchaînez. Passez à couper un arbre et ça recommence.<br>
 <strong>Contextuel</strong> — « Voulez-vous vraiment casser : Bûche de chêne ? » L'écran vous dit toujours ce que vous allez faire.<br>
 ⏱️ <strong>Pas de Pause</strong> — Le jeu continue pendant la saisie. Bon courage dans le Nether.<br>
 <strong>Traduit</strong> — Anglais et français.<br>
-<strong>100% Client-Side</strong> — Fonctionne sur n'importe quel serveur, le serveur n'a pas besoin du mod.
+<strong>Commande Admin</strong> — <code>/areyousure</code> active ou désactive le mod pour tous ou certains joueurs, règle le captcha et en envoie un à la demande.<br>
+<strong>Serveur Optionnel</strong> — Fonctionne seul sur n'importe quel serveur, installez-le côté serveur pour la commande admin.
 </p>
 
 <br>
@@ -148,7 +150,7 @@ Pranking a friend, a chaotic YouTube challenge, a "can you beat the game" run, o
 <strong>1.</strong> Vous cliquez sur quelque chose.<br>
 <strong>2.</strong> « ÊTES-VOUS SÛR ? » → <strong>Oui, j'en suis sûr</strong> / <strong>Non, laisse tomber</strong>.<br>
 <strong>3.</strong> « Prouvez que vous n'êtes pas un robot » → tapez le code, puis <strong>Entrée</strong> ou <strong>Valider</strong>.<br>
-<strong>4.</strong> Vous pouvez effectuer <strong>une</strong> action. Recliquez dans les 10 secondes.<br>
+<strong>4.</strong> Répétez la même action autant que vous voulez. Faites autre chose et tout recommence.<br>
 <strong>5.</strong> Recommencez pour toujours.
 </p>
 
@@ -218,6 +220,6 @@ Piéger un ami, un défi YouTube chaotique, un run « finir le jeu avec », ou a
 </a>
 </div>
 
-<p align="center"><strong>Author:</strong> vyrriox &nbsp;|&nbsp; <strong>License:</strong> MIT</p>
+<p align="center"><strong>Author:</strong> vyrriox &nbsp;|&nbsp; <strong>License:</strong> Apache 2.0</p>
 
 </div>

@@ -8,9 +8,10 @@ Thanks for wanting to make Minecraft even more annoying.
 - One branch per target (`neoforge-1.21.1`, `forge-1.21.1`, `neoforge-26.1.2`, `forge-26.1.2`)
   holds that single project at the repository root.
 
-A change to gameplay logic must be ported to all four folders. The code is intentionally kept
-almost identical between them; only the loader glue (`AreYouSure.java`, event types) and the
-26.1 GUI API (`GuiGraphicsExtractor`, `KeyEvent`) differ.
+Gameplay code lives in `common/1.21.1/` and `common/26.1.2/`; each loader folder only holds its
+entry point. A gameplay change goes into both `common/` folders (they differ only by the 26.1 GUI
+API and a few renames). Never edit the per-target branches by hand: run
+`scripts/split-branches.sh` from `main` to regenerate them.
 
 ## Workflow
 
@@ -42,8 +43,9 @@ Merci de vouloir rendre Minecraft encore plus pénible.
 - Une branche par cible (`neoforge-1.21.1`, `forge-1.21.1`, `neoforge-26.1.2`, `forge-26.1.2`)
   contient ce seul projet à la racine.
 
-Toute modification de logique doit être portée dans les quatre dossiers. Seuls le code d'amorçage
-du loader et l'API GUI de 26.1 diffèrent.
+Le code de jeu vit dans `common/1.21.1/` et `common/26.1.2/` ; chaque dossier loader ne contient que
+son point d'entrée. Une modification de gameplay va dans les deux dossiers `common/`. Les branches
+par cible ne se modifient jamais à la main : lancez `scripts/split-branches.sh` depuis `main`.
 
 ## Déroulement
 
