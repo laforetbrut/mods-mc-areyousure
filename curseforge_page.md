@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/Website-Arcadia-blue?style=for-the-badge&logo=google-chrome" alt="Website">
   </a>
   &nbsp;
-  <a href="https://github.com/laforetbrut/are-you-sure">
+  <a href="https://github.com/laforetbrut/mods-mc-areyousure">
     <img src="https://img.shields.io/badge/Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
   &nbsp;
