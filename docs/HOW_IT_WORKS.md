@@ -1,59 +1,72 @@
 # How it works
 
-## Overview
+## Layout
 
-The mod is client-side only and made of three classes:
+Gameplay code is shared per Minecraft version in `common/<mc>/`. Each loader project only keeps a
+small entry point that wires loader events and networking to that shared code.
 
-| Class          | Role                                                                 |
-|----------------|----------------------------------------------------------------------|
-| `AreYouSure`   | Mod entry point. Registers the listeners on the client only.         |
-| `ActionGuard`  | Intercepts inputs, opens the screen, manages the single-use pass.    |
-| `SureScreen`   | The two-step screen: confirmation, then captcha.                     |
+| Class                        | Side   | Role                                                          |
+|------------------------------|--------|---------------------------------------------------------------|
+| `client.ActionGuard`         | client | Decides whether an input goes through, manages the pass.      |
+| `client.SureScreen`          | client | The two-step screen: confirmation, then captcha.              |
+| `client.ClientState`         | client | Settings received from the server, defaults otherwise.        |
+| `server.ServerSettings`      | server | Per-world settings, saved to `<world>/areyousure.json`.       |
+| `server.AdminCommand`        | server | The `/areyousure` command tree.                               |
+| `network.SettingsPayload`    | both   | Server to client sync, optional on both sides.                |
+| `<loader>.AreYouSure`        | both   | Loader entry point (events, channel, command registration).   |
 
 ## Input interception
 
 Both loaders fire `InputEvent.InteractionKeyMappingTriggered` whenever Minecraft is about to run
 an attack (left click, including every tick of block breaking), a use (right click, once per hand)
-or a pick-block (middle click). `ActionGuard` cancels the event and disables the hand swing, then
-opens `SureScreen` if no screen is open yet.
-
-- NeoForge: `event.setCanceled(true)` on `NeoForge.EVENT_BUS`.
-- Forge 1.21.1: `event.setCanceled(true)` on `MinecraftForge.EVENT_BUS`.
-- Forge 26.1.2 (EventBus 7): the listener is a predicate registered on
-  `InteractionKeyMappingTriggered.BUS`; returning `true` cancels.
+or a pick-block (middle click). The loader glue asks `ActionGuard.intercept`; when it returns true
+the event is cancelled and the hand swing is suppressed.
 
 ## The pass
 
-When the captcha is solved, `ActionGuard.grant(key)` stores the key mapping that triggered the
-screen and a 10 second deadline. The next event for that key is allowed and marks the pass as in
-use. While the key is held, events keep passing (so a block can be fully mined). On the first
-client tick where the key is no longer down, the pass is consumed.
+Every input is turned into a context string describing the kind of action:
 
-## The captcha
+| Situation                                   | Context               |
+|---------------------------------------------|-----------------------|
+| Left click on a block                       | `attack:block:<id>`   |
+| Left click on an entity                     | `attack:entity:<type>`|
+| Right click on a block with a block in hand | `place:<item>`        |
+| Right click on a block (otherwise)          | `use:block:<id>`      |
+| Right click on an entity                    | `use:entity:<type>`   |
+| Right click in the air with an item         | `use:item:<id>`       |
+| Middle click                                | `pick:...`            |
 
-- Alphabet without ambiguous characters (`0/O`, `1/I`) : `ABCDEFGHJKLMNPQRSTUVWXYZ23456789`.
-- 6 characters, each with a random color and a vertical offset between -4 and +4 pixels.
-- 40 translucent noise dots and a strike-through line.
-- The answer is case-insensitive. A wrong answer regenerates everything.
+Solving the captcha stores that context. Every later input with the same context passes; any
+other context opens the screen again. Inputs without a target or an item (swinging at the air,
+right clicking with an empty hand) never touch the pass. The pass also expires after an idle
+period (30 seconds by default, `0` disables it).
+
+## Server sync
+
+When the mod is on the server, `SettingsPayload` is sent on login and after every change made with
+the command: effective on/off state for that player, captcha length, idle timeout, and an optional
+"challenge" flag that opens a captcha immediately. The channel is optional on both sides, so a
+modded client still works on a server without the mod (defaults apply) and the server never sends
+the payload to a client that does not have it.
 
 ## Version differences
 
-Minecraft 26.1 renamed the GUI rendering API: `GuiGraphics` became `GuiGraphicsExtractor`,
-`Screen.render` became `extractRenderState`, `drawString` / `drawCenteredString` became `text` /
-`centeredText`, and `keyPressed` now takes a `KeyEvent` record.
+Minecraft 26.1 renamed the GUI API (`GuiGraphicsExtractor`, `extractRenderState`, `text`,
+`textWithWordWrap`, `item`, `KeyEvent`) and `ResourceLocation` became `Identifier`. Forge 26.1 uses
+EventBus 7, where a cancellable listener returns `true` to cancel. Commands use
+`Commands.hasPermission(Commands.LEVEL_GAMEMASTERS)` in 26.1 and `hasPermission(2)` in 1.21.1.
 
 ---
 
 # Fonctionnement
 
-Le mod est uniquement côté client. `ActionGuard` écoute l'événement
-`InteractionKeyMappingTriggered` (attaque, utilisation, pick-block), l'annule et ouvre `SureScreen`.
-Une fois le captcha réussi, un passe est accordé pour la touche concernée : il reste valable tant
-que la touche est maintenue (pour pouvoir miner un bloc entier) et il est consommé au relâchement,
-ou au bout de 10 secondes s'il n'est pas utilisé.
+Le code est partagé par version de Minecraft dans `common/<mc>/` ; chaque projet loader ne garde
+qu'un point d'entrée qui branche les événements et le réseau.
 
-Le captcha utilise un alphabet sans caractères ambigus, 6 caractères colorés et décalés, du bruit
-visuel et une ligne barrée. Une mauvaise réponse régénère un code.
+Chaque action est traduite en un contexte (attaquer un type d'entité, casser un type de bloc, poser
+un type de bloc, utiliser un objet...). Résoudre le captcha mémorise ce contexte : toutes les actions
+identiques passent ensuite, toute autre action rouvre l'écran. Frapper dans le vide ou cliquer main
+vide ne change rien. Le passe expire après une période d'inactivité (30 secondes par défaut).
 
-Minecraft 26.1 a renommé l'API de rendu GUI (`GuiGraphicsExtractor`, `extractRenderState`,
-`text`, `centeredText`, `KeyEvent`), d'où les petites différences entre les dossiers.
+Quand le mod est aussi sur le serveur, les réglages de `/areyousure` sont envoyés au client à la
+connexion et à chaque modification. Le canal est optionnel des deux côtés.
