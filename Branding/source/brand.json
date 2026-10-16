@@ -1,0 +1,294 @@
+{
+  "name": "Are You Sure?",
+  "slug": "are-you-sure",
+  "kind": "minecraft-mod",
+  "tagline": "Are you really sure?",
+  "concept": {
+    "en": "A question mark whose dot is an empty checkbox: the question and the captcha you still have to solve.",
+    "fr": "Un point d'interrogation dont le point est une case vide : la question, et le captcha qu'il reste à résoudre."
+  },
+  "palette": {
+    "primary": "#e0453a",
+    "secondary": "#6ba8ff",
+    "ink": "#141419",
+    "paper": "#f6efe9"
+  },
+  "mark": "mark.svg",
+  "mark_reverse": "mark-reverse.svg",
+  "mark_mono": "mark-mono.svg",
+  "mark_small": "mark.svg",
+  "wordmark": {
+    "text": "ARE YOU SURE?",
+    "pixel": {
+      "base": "#e0453a",
+      "side": "#760b1e",
+      "outline": "#141419",
+      "depth": 2,
+      "sub": 2,
+      "texture": 0.12,
+      "spacing": 1,
+      "seed": 11,
+      "glyphs": {
+        "A": [
+          ".XXXX.",
+          "XX..XX",
+          "XX..XX",
+          "XXXXXX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX"
+        ],
+        "R": [
+          "XXXXX.",
+          "XX..XX",
+          "XX..XX",
+          "XXXXX.",
+          "XX.XX.",
+          "XX..XX",
+          "XX..XX"
+        ],
+        "E": [
+          "XXXXXX",
+          "XX....",
+          "XX....",
+          "XXXXX.",
+          "XX....",
+          "XX....",
+          "XXXXXX"
+        ],
+        "Y": [
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          ".XXXX.",
+          "..XX..",
+          "..XX..",
+          "..XX.."
+        ],
+        "O": [
+          ".XXXX.",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          ".XXXX."
+        ],
+        "U": [
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          ".XXXX."
+        ],
+        "S": [
+          ".XXXXX",
+          "XX....",
+          "XX....",
+          ".XXXX.",
+          "....XX",
+          "....XX",
+          "XXXXX."
+        ],
+        "?": [
+          ".XXXX.",
+          "XX..XX",
+          "....XX",
+          "...XX.",
+          "..XX..",
+          "......",
+          ".XXXX.",
+          ".X..X.",
+          ".X..X.",
+          ".XXXX."
+        ]
+      }
+    }
+  },
+  "wordmark_reverse": {
+    "text": "ARE YOU SURE?",
+    "pixel": {
+      "base": "#e0453a",
+      "side": "#760b1e",
+      "outline": "#f6efe9",
+      "depth": 2,
+      "sub": 2,
+      "texture": 0.12,
+      "spacing": 1,
+      "seed": 11,
+      "glyphs": {
+        "A": [
+          ".XXXX.",
+          "XX..XX",
+          "XX..XX",
+          "XXXXXX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX"
+        ],
+        "R": [
+          "XXXXX.",
+          "XX..XX",
+          "XX..XX",
+          "XXXXX.",
+          "XX.XX.",
+          "XX..XX",
+          "XX..XX"
+        ],
+        "E": [
+          "XXXXXX",
+          "XX....",
+          "XX....",
+          "XXXXX.",
+          "XX....",
+          "XX....",
+          "XXXXXX"
+        ],
+        "Y": [
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          ".XXXX.",
+          "..XX..",
+          "..XX..",
+          "..XX.."
+        ],
+        "O": [
+          ".XXXX.",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          ".XXXX."
+        ],
+        "U": [
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          "XX..XX",
+          ".XXXX."
+        ],
+        "S": [
+          ".XXXXX",
+          "XX....",
+          "XX....",
+          ".XXXX.",
+          "....XX",
+          "....XX",
+          "XXXXX."
+        ],
+        "?": [
+          ".XXXX.",
+          "XX..XX",
+          "....XX",
+          "...XX.",
+          "..XX..",
+          "......",
+          ".XXXX.",
+          ".X..X.",
+          ".X..X.",
+          ".XXXX."
+        ]
+      }
+    }
+  },
+  "tagline_font": {
+    "font": "JetBrains Mono",
+    "weight": 700,
+    "tracking": 120,
+    "case": "upper"
+  },
+  "lockup": {
+    "icon_padding": 0.06,
+    "horizontal": {
+      "gap": 0.26,
+      "wordmark": 0.5,
+      "tagline": 0.12,
+      "tagline_gap": 0.14
+    },
+    "stacked": {
+      "gap": 0.18,
+      "wordmark": 0.26,
+      "max_width": 2.6,
+      "tagline": 0.085,
+      "tagline_gap": 0.1
+    }
+  },
+  "icon": {
+    "background": "ink",
+    "knockout": false,
+    "mark_on_background": "mark-reverse.svg",
+    "app_scale": 0.62,
+    "radius": 0.22,
+    "maskable_scale": 0.5,
+    "avatar_scale": 0.62
+  },
+  "banner": {
+    "background": "#141419",
+    "light": "#e0453a",
+    "pattern": "mark",
+    "pattern_opacity": 0.05,
+    "texture": null,
+    "grain": 0.3,
+    "vignette": 0.35,
+    "shadow": 40,
+    "tagline": true,
+    "colorway": "reverse",
+    "logo_fill": 0.78
+  },
+  "banners": null,
+  "minecraft": {
+    "logo_layout": "horizontal",
+    "logo_colorway": "reverse",
+    "logo_width": 600,
+    "icon_scale": 0.9
+  },
+  "ui_font": "Inter",
+  "rationale": {
+    "en": [
+      "The whole mod is one question asked before every action, so the mark is one question mark, loud and alone.",
+      "Its dot is an empty checkbox: the captcha that still has to be solved, the joke in one square.",
+      "Drawn on the 16 pixel grid of a Minecraft item, with a three-cell stroke everywhere, so it stays sharp at 16 px in the mod list.",
+      "No troll face, no TNT, no circular arrows: every neighbour on Modrinth uses a meme or a screenshot, this one uses a sign.",
+      "The title uses the same blocky construction and repeats the empty box as the dot of its own question mark."
+    ],
+    "fr": [
+      "Tout le mod est une question posée avant chaque action : le symbole est un seul point d'interrogation, bruyant et seul.",
+      "Son point est une case vide : le captcha qu'il reste à résoudre, la blague en un carré.",
+      "Dessiné sur la grille de 16 pixels d'un objet Minecraft, avec un trait de trois cases partout, il reste net à 16 px dans la liste des mods.",
+      "Ni troll face, ni TNT, ni flèches circulaires : les voisins sur Modrinth utilisent un mème ou une capture, celui-ci utilise un signe.",
+      "Le titre suit la même construction en blocs et reprend la case vide comme point de son propre point d'interrogation."
+    ]
+  },
+  "palette_notes": {
+    "primary": {
+      "en": "The red of the title bar of the mod's own confirmation screen.",
+      "fr": "Le rouge du bandeau de l'écran de confirmation du mod."
+    },
+    "secondary": {
+      "en": "One of the colors of the captcha letters, for links and accents.",
+      "fr": "Une des couleurs des lettres du captcha, pour les liens et les accents."
+    },
+    "ink": {
+      "en": "The dark panel of the confirmation screen.",
+      "fr": "Le panneau sombre de l'écran de confirmation."
+    },
+    "paper": {
+      "en": "A warm white, the inside of the empty checkbox.",
+      "fr": "Un blanc chaud, l'intérieur de la case vide."
+    }
+  },
+  "type_note": {
+    "en": "A blocky pixel title extruded like the game's lettering, with its own question mark redrawn so that its dot is the empty box of the mark. The tagline is set in JetBrains Mono, a monospaced face that looks like a code you have to type back.",
+    "fr": "Un titre en blocs de pixels extrudé comme le lettrage du jeu, dont le point d'interrogation est redessiné pour que son point soit la case vide du symbole. Le slogan est en JetBrains Mono, une police à chasse fixe qui ressemble à un code à recopier."
+  },
+  "color_sources": [
+    "refs/screen-captcha.png"
+  ],
+  "grid": 16
+}
