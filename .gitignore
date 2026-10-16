@@ -31,3 +31,12 @@ out/
 .DS_Store
 Thumbs.db
 jars/
+
+# Page images: recording folder, script caches, generated pictures (hosted in Team-Arcadia/images)
+run-*/
+__pycache__/
+images/*
+!images/tools/
+
+# Footage: recordings and heavy videos stay local
+media/

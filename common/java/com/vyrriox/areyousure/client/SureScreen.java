@@ -86,6 +86,8 @@ public final class SureScreen extends Screen {
         input.setValue(previous);
         addRenderableWidget(input);
         setInitialFocus(input);
+        setFocused(input);
+        input.setFocused(true);
         int bw = (PANEL_W - 32 - 8) / 3;
         addRenderableWidget(Button.builder(Component.translatable("areyousure.captcha.verify"), b -> verify())
                 .bounds(x + 16, y + PANEL_H - 32, bw, 20).build());
@@ -180,7 +182,7 @@ public final class SureScreen extends Screen {
 
         if (!captchaStep) {
             graphics.drawWordWrap(font, Component.translatable("areyousure.warning"), x + 16, y + 66, PANEL_W - 32, MUTED);
-            graphics.drawString(font, Component.translatable("areyousure.passinfo"), x + 16, y + 102, MUTED, false);
+            graphics.drawWordWrap(font, Component.translatable("areyousure.passinfo"), x + 16, y + 98, PANEL_W - 32, MUTED);
             return;
         }
 
@@ -196,11 +198,17 @@ public final class SureScreen extends Screen {
             graphics.fill(boxX + 1 + noise[i], boxY + 1 + noise[i + 1], boxX + 3 + noise[i], boxY + 3 + noise[i + 1], noise[i + 2]);
         }
         float time = (System.currentTimeMillis() % 100000L) / 300.0F;
-        int spacing = 18;
-        int startX = boxX + (boxW - spacing * code.length()) / 2 + 6;
+        int spacing = 22;
+        int startX = boxX + (boxW - spacing * code.length()) / 2 + 5;
         for (int i = 0; i < code.length(); i++) {
-            int wobble = Math.round(Mth.sin(time + i) * 1.5F);
-            graphics.drawString(font, String.valueOf(code.charAt(i)), startX + i * spacing, boxY + 12 + charOffsets[i] + wobble, charColors[i], true);
+            float wobble = Mth.sin(time + i) * 1.5F;
+            float cx = startX + i * spacing;
+            float cy = boxY + 9 + charOffsets[i] + wobble;
+            graphics.pose().pushPose();
+            graphics.pose().translate(cx, cy, 0.0F);
+            graphics.pose().scale(1.6F, 1.6F, 1.0F);
+            graphics.drawString(font, String.valueOf(code.charAt(i)), 0, 0, charColors[i], true);
+            graphics.pose().popPose();
         }
         graphics.fill(boxX + 6, boxY + 16, boxX + boxW - 6, boxY + 17, 0x88FFFFFF);
 
@@ -208,6 +216,18 @@ public final class SureScreen extends Screen {
                 ? Component.translatable("areyousure.captcha.wrong", attempts)
                 : Component.translatable("areyousure.captcha.prompt");
         graphics.drawString(font, status, x + 16, y + PANEL_H - 70, attempts > 0 ? 0xFFFF7A70 : MUTED, false);
+    }
+
+    /**
+     * Clicking a button rebuilds or keeps the focus on that button, which would swallow what the player
+     * types next. During the captcha step the text field always takes the focus back.
+     */
+    @Override
+    public void tick() {
+        super.tick();
+        if (captchaStep && input != null && getFocused() != input) {
+            setFocused(input);
+        }
     }
 
     @Override
