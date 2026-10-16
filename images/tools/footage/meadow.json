@@ -1,0 +1,32 @@
+{
+  "start": 140,
+  "look": "warm",
+  "letterbox": null,
+  "transition": "DISSOLVE",
+  "transition_ticks": 10,
+  "fade_in": 0,
+  "fade_out": 0,
+  "shots": [
+    {
+      "type": "dolly",
+      "from_pos": [
+        1.5,
+        -58.0,
+        -3.8
+      ],
+      "to_pos": [
+        -0.5,
+        -58.0,
+        -3.5
+      ],
+      "look_at": [
+        2.0,
+        -59.7,
+        3.5
+      ],
+      "ticks": 90,
+      "fov": 45
+    }
+  ],
+  "actors": []
+}
