@@ -1,7 +1,7 @@
 <div align="center" style="text-align:center">
-<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/hero.gif" alt="Are You Sure?: a pig and an oak tree in a sunny meadow / Are You Sure? : un cochon et un chêne dans une prairie ensoleillée" width="800"></p>
-<p><a href="https://discord.gg/xjF8Rtzyd4"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-discord.png" alt="Discord: Join"></a> <a href="https://arcadia-echoes-of-power.fr/"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-website.png" alt="Website: Arcadia"></a> <a href="https://github.com/laforetbrut/mods-mc-areyousure"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-source.png" alt="Source: GitHub"></a> <a href="https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-donate.png" alt="Donate: Stripe"></a> <a href="https://www.arcadia-echoes-of-power.fr/partenariat"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-partners.png" alt="Partners: See"></a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-minecraft.png" alt="Minecraft: 1.21.1 | 26.1.2"> <img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-loaders.png" alt="Loaders: NeoForge | Forge"> <img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-side.png" alt="Side: Client, server optional"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/hero.gif" alt="The Are You Sure? logo, a red question mark whose dot is an empty checkbox, over a pig and an oak tree in a sunny meadow / Le logo Are You Sure?, un point d&#x27;interrogation rouge dont le point est une case vide, au-dessus d&#x27;un cochon et d&#x27;un chêne dans une prairie ensoleillée" width="800"></p>
+<p><a href="https://discord.gg/xjF8Rtzyd4"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-discord.png" alt="Discord: Join" width="102"></a> <a href="https://arcadia-echoes-of-power.fr/"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-website.png" alt="Website: Arcadia" width="163"></a> <a href="https://github.com/laforetbrut/mods-mc-areyousure"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-source.png" alt="Source: GitHub" width="97"></a> <a href="https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-donate.png" alt="Donate: Stripe" width="98"></a> <a href="https://www.arcadia-echoes-of-power.fr/partenariat"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-partners.png" alt="Partners: See" width="111"></a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-minecraft.png" alt="Minecraft: 1.21.1 | 26.1.2" width="204"> <img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-loaders.png" alt="Loaders: NeoForge | Forge" width="166"> <img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-side.png" alt="Side: Client, server optional" width="213"></p>
 </div>
 
 <div align="center" style="text-align:center">
@@ -29,7 +29,7 @@
 <div align="center" style="text-align:center">
 <h3><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/title-admin-en.gif" alt="For Server Admins" width="800"></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/shield.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>On or off:</strong></span> <code>/areyousure&nbsp;enable</code> or <code>disable</code>, for everyone at once.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/users.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Pick your victims:</strong></span> <code>/areyousure&nbsp;only&nbsp;&lt;players&gt;</code> targets just them.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/flag.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Pick your victims:</strong></span> <code>/areyousure&nbsp;only&nbsp;&lt;players&gt;</code> targets just them.</p>
 <p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/gear.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Tune it:</strong></span> code length from 3 to 10, pass timeout, a captcha on demand with <code>challenge</code>.</p>
 </div>
 
@@ -62,7 +62,7 @@
 <div align="center" style="text-align:center">
 <h3><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/title-admin-fr.gif" alt="Pour les Admins" width="800"></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/shield.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Activer, couper&nbsp;:</strong></span> <code>/areyousure&nbsp;enable</code> ou <code>disable</code>, pour tout le monde.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/users.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Choisissez vos victimes&nbsp;:</strong></span> <code>/areyousure&nbsp;only&nbsp;&lt;joueurs&gt;</code> ne vise qu'eux.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/flag.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Choisissez vos victimes&nbsp;:</strong></span> <code>/areyousure&nbsp;only&nbsp;&lt;joueurs&gt;</code> ne vise qu'eux.</p>
 <p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/icons/gear.png" alt="" width="32"> <span style="color:#e0453a;font-size:18px"><strong>Réglez-le&nbsp;:</strong></span> code de 3 à 10 caractères, durée du passe, captcha à la demande avec <code>challenge</code>.</p>
 </div>
 
@@ -74,18 +74,18 @@
 <h3><span style="font-size:24px;color:#e5e5e5"><strong>Official Hosting Partner / Hébergeur Officiel Partenaire</strong></span></h3>
 <p>Want to prank your whole server? Our partner offers Minecraft hosting optimized for modpacks.<br><em>Envie de piéger tout votre serveur&nbsp;? Notre partenaire propose un hébergement Minecraft optimisé pour les modpacks.</em></p>
 <p><a href="https://wabbanode.com/partner/vyrriox"><img src="https://arcadia-echoes-of-power.fr/storage/curseforge/bannerwab.png" alt="WabbaNode, official hosting partner" width="800"></a></p>
-<p><a href="https://wabbanode.com/partner/vyrriox"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-partner-1.png" alt="Host with: WabbaNode"></a></p>
+<p><a href="https://wabbanode.com/partner/vyrriox"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-partner-1.png" alt="Host with: WabbaNode" width="203"></a></p>
 <p>&nbsp;</p>
 <h3><span style="font-size:24px;color:#e5e5e5"><strong>Join the Adventure / Rejoignez l'Aventure</strong></span></h3>
 <p>Discover our other mods on the Arcadia modpack: industry, magic and exploration.<br><em>Découvrez nos autres mods sur le modpack Arcadia&nbsp;: industrie, magie et exploration.</em></p>
-<p><a href="https://arcadia-echoes-of-power.fr/"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-extra-1-en.png" alt="Play now: Arcadia"></a></p>
+<p><a href="https://arcadia-echoes-of-power.fr/"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-extra-1-en.png" alt="Play now: Arcadia" width="175"></a></p>
 </div>
 
 <div align="center" style="text-align:center">
 <p><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/divider.gif" alt="" width="800"></p>
 <p><span style="font-size:24px;color:#e5e5e5"><strong>Support the Project / Soutenir le Projet</strong></span></p>
 <p><strong>Your support keeps Arcadia alive and evolving.</strong><br><em>Votre soutien fait vivre et évoluer Arcadia.</em></p>
-<p><a href="https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-donate.png" alt="Donate: Stripe"></a></p>
-<p><a href="https://www.arcadia-echoes-of-power.fr/partenariat"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-partners.png" alt="Partners: See"></a></p>
+<p><a href="https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-donate.png" alt="Donate: Stripe" width="98"></a></p>
+<p><a href="https://www.arcadia-echoes-of-power.fr/partenariat"><img src="https://cdn.jsdelivr.net/gh/Team-Arcadia/images@main/mods/areyousure/curseforge/badge-partners.png" alt="Partners: See" width="111"></a></p>
 <p><strong>Author / Auteur:</strong> vyrriox &nbsp;|&nbsp; <strong>License / Licence:</strong> Apache 2.0</p>
 </div>

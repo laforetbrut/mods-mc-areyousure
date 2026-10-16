@@ -37,3 +37,6 @@ run-*/
 __pycache__/
 images/*
 !images/tools/
+
+# Footage: recordings and heavy videos stay local
+media/

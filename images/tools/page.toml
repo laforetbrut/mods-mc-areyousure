@@ -21,8 +21,8 @@ name = "Are You Sure?"
 
 [hero]
 file = "hero.gif"
-alt.en = "Are You Sure?: a pig and an oak tree in a sunny meadow"
-alt.fr = "Are You Sure? : un cochon et un chêne dans une prairie ensoleillée"
+alt.en = "The Are You Sure? logo, a red question mark whose dot is an empty checkbox, over a pig and an oak tree in a sunny meadow"
+alt.fr = "Le logo Are You Sure?, un point d'interrogation rouge dont le point est une case vide, au-dessus d'un cochon et d'un chêne dans une prairie ensoleillée"
 
 [links]
 discord = "https://discord.gg/xjF8Rtzyd4"
@@ -115,7 +115,7 @@ icon = "refresh"
 id = "admin"
 title.en = "For Server Admins"
 title.fr = "Pour les Admins"
-icon = "server"
+icon = "key"
 
   [[section.item]]
   icon = "shield"
@@ -125,7 +125,7 @@ icon = "server"
   text.fr = "<code>/areyousure enable</code> ou <code>disable</code>, pour tout le monde."
 
   [[section.item]]
-  icon = "users"
+  icon = "flag"
   name.en = "Pick your victims"
   name.fr = "Choisissez vos victimes"
   text.en = "<code>/areyousure only &lt;players&gt;</code> targets just them."
